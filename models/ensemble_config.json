@@ -1,0 +1,13 @@
+{
+  "weights": {
+    "lightgbm": 0.5,
+    "xgboost": 0.3,
+    "catboost": 0.2
+  },
+  "threshold": 0.30000000000000004,
+  "performance": {
+    "roc_auc": 0.9257560707324592,
+    "pr_auc": 0.592465613907561,
+    "profit": 462830
+  }
+}

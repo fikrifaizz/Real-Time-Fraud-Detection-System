@@ -1,0 +1,14 @@
+version: '3.8'
+
+services:
+  fraud-api:
+    build:
+      context: ..
+      dockerfile: docker/Dockerfile
+    ports:
+      - "8000:8000"
+    volumes:
+      - ../models:/app/models
+    environment:
+      - MODEL_PATH=/app/models
+    restart: unless-stopped
